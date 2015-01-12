@@ -11,3 +11,5 @@ dist
 
 tests/_env
 tests/_oldenv
+
+/build
