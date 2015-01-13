@@ -56,6 +56,8 @@ class Image(Orderable):
     src_width = models.PositiveSmallIntegerField(_("Image height"), editable=False, null=True)
     title = models.CharField(_("Title"), max_length=255, blank=True)
     alt = models.TextField(_("Alt text"), blank=True)
+    tagline_title = models.CharField(_("Tagline Title"), max_length=255, blank=True)
+    tagline_context = models.TextField(_("Tagline Context"), blank=True)
 
     def __unicode__(self):
         return self.title or self.alt or str(self.pk)
